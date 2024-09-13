@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chit Kingdom</title>
+    <link rel="icon" href="public/cardback.ico">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="gameBody">
+
+    <!-- HTML CODE FOR GAME PAGE  -->
+
+    <main class="gameMain">
+      <div class="gameMainContainer">
+        <div class="roundNum"><p class="roundMainNum"></p></div>
+        <div class="gameFunctions">
+          <div class="playerCards">
+            <div class="cards card1">
+              <p class="gameplr1">Player 1</p>
+              <img
+                src="public/cardback.jpg"
+                alt="card1"
+                class="cardImage crd1"
+              />
+            </div>
+            <div class="cards card2">
+              <p class="gameplr2">Player 1</p>
+              <img
+                src="public/cardback.jpg"
+                alt="card2"
+                class="cardImage crd2"
+              />
+            </div>
+            <div class="cards card3">
+              <p class="gameplr3">Player 1</p>
+              <img
+                src="public/cardback.jpg"
+                alt="card3"
+                class="cardImage crd3"
+              />
+            </div>
+            <div class="cards card4">
+              <p class="gameplr4">Player 1</p>
+              <img
+                src="public/cardback.jpg"
+                alt="card4"
+                class="cardImage crd4"
+              />
+            </div>
+          </div>
+          <div class="swapBtn">
+            <button class="swap">Jumble</button>
+          </div>
+          <div class="gameMainBottom">
+            <template id="theifGuessTemplate">
+              <div class="bottomChild princeGuess shadowanimation">
+                <div class="princeGuessName">
+                  <p class="princePlayer">Player Prince</p>
+                  <p class="princePlayerMsg">Choose The Theif !</p>
+                </div>
+                <div class="theifOption">
+                  <p class="soilderPlayerGuess">Player Soilder</p>
+                  <p class="theifPlayerGuess">Player Thief</p>
+                </div>
+                <div class="checkBtn">
+                </div>
+                <template id="checkBtnTemplate"><button class="theifCheck">Check</button></template>
+              </div>
+            </template>
+            <div class="bottomChild gameScores">
+              <div class="playersScores player1Score">
+                <p class="plyr1Score">Player 1 &nbsp;</p>
+                <p></p>
+              </div>
+              <div class="playersScores player2Score">
+                <p class="plyr2Score">Player 2 &nbsp;</p>
+                <p></p>
+              </div>
+              <div class="playersScores player3Score">
+                <p class="plyr3Score">Player 3 &nbsp;</p>
+                <p></p>
+              </div>
+              <div class="playersScores player4Score">
+                <p class="plyr4Score">Player 4 &nbsp;</p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nextRoundBtn">
+        </div>
+      </div>
+    </main>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
